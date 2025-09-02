@@ -20,9 +20,9 @@ layers:
   - D
   - F
   - G
-  - RW
+  - $$mdi:skip-previous$$
   - PLAY PAUSE
-  - FAST FORWARD
+  - $$mdi:skip-next$$
   - H
   - J
   - K
