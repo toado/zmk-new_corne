@@ -96,7 +96,7 @@
         nav_layer {
             bindings = <
 &none         &none  &none     &kp UP_ARROW  &none      &none                  &none         &none  &none             &none     &none   &none      &none
-&none         &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none           &none  &none  &none  &none  &kp LEFT          &kp DOWN  &kp UP  &kp RIGHT  &none
+&kp LCTRL     &none  &kp LEFT  &kp DOWN      &kp RIGHT  &none           &none  &none  &none  &none  &kp LEFT          &kp DOWN  &kp UP  &kp RIGHT  &none
 &kp LEFT_ALT  &none  &none     &none         &none      &none  &none           &none         &none  &none             &none     &none   &none      &none
                                &none         &none      &none                                &none  &kp LEFT_COMMAND  &none
             >;
