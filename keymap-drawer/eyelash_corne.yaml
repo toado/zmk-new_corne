@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -47,7 +47,7 @@ layers:
   - nav
   - {t: '$$mdi:keyboard-space$$', h: fn}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '`', h: NUMBER, s: '~'}
+  - {t: '$$mdi:backspace$$', h: NUMBER}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
