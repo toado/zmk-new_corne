@@ -15,7 +15,7 @@ layers:
   - P
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-control$$
-  - A
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - S
   - D
   - F
@@ -27,7 +27,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -176,7 +176,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
