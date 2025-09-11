@@ -203,7 +203,7 @@ layers:
   - F8
   - F9
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: game-1, h: toggle}
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
