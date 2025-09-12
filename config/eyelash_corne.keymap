@@ -121,7 +121,7 @@
 
         forwardslash {
             bindings = <&kp SLASH>;
-            key-positions = <17 23>;
+            key-positions = <16 24>;
         };
 
         underscore {
