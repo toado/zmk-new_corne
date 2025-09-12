@@ -101,22 +101,22 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <5 7>;
+            key-positions = <4 8>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <18 22>;
+            key-positions = <17 23>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <16 24>;
+            key-positions = <44 45>;
         };
 
         asterik {
             bindings = <&kp ASTERISK>;
-            key-positions = <4 8>;
+            key-positions = <3 9>;
         };
 
         forwardslash {
@@ -146,29 +146,29 @@
         number_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &none  &kp N7  &kp N8      &kp N9        &none                   &trans          &none  &none         &none          &none            &none      &kp BSPC
-&trans  &none  &kp N4  &kp N5      &kp NUMBER_6  &none           &trans  &trans  &trans  &none  &kp LEFT_GUI  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RCTRL  &none
-&trans  &none  &kp N1  &kp N2      &kp N3        &none  &none            &trans          &none  &none         &none          &none            &none      &none
-                       &kp PERIOD  &kp N0        &none                                   &none  &kp DEL       &trans
+&trans  &none  &kp N7  &kp N8      &kp N9        &none                    &trans          &none   &none         &none          &none            &none      &trans
+&trans  &none  &kp N4  &kp N5      &kp NUMBER_6  &none            &trans  &trans  &trans  &none   &kp LEFT_GUI  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RCTRL  &none
+&trans  &none  &kp N1  &kp N2      &kp N3        &none   &none            &trans          &none   &none         &none          &none            &none      &none
+                       &kp PERIOD  &kp N0        &trans                                   &trans  &none         &trans
             >;
         };
 
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &none  &kp AMPERSAND    &kp ASTERISK  &kp PIPE   &none                    &trans          &kp GRAVE  &kp PLUS  &kp MINUS  &kp EQUAL  &none  &kp BACKSPACE
-&trans  &none  &kp DOLLAR       &kp PERCENT   &kp CARET  &none            &trans  &trans  &trans  &none      &none     &none      &none      &none  &none
-&trans  &none  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &none  &trans            &trans          &none      &none     &none      &none      &none  &none
-                                &trans        &trans     &none                                    &none      &trans    &trans
+&trans  &none  &kp AMPERSAND    &kp ASTERISK  &kp PIPE   &none                     &trans          &kp GRAVE  &kp PLUS  &kp MINUS  &kp EQUAL  &none  &trans
+&trans  &none  &kp DOLLAR       &kp PERCENT   &kp CARET  &none             &trans  &trans  &trans  &none      &none     &none      &none      &none  &none
+&trans  &none  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &none   &trans            &trans          &none      &none     &none      &none      &none  &none
+                                &trans        &trans     &trans                                    &trans     &trans    &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&none  &none      &none           &none         &none         &none                   &trans          &none  &none     &kp UP_ARROW  &none   &none      &none
-&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &none           &trans  &trans  &trans  &none  &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &none
-&none  &none      &none           &none         &none         &none  &none            &trans          &none  &none     &none         &none   &none      &none
-                                  &none         &none         &none                                   &none  &none     &none
+&none  &none      &none           &none         &none         &none                    &trans          &none   &none     &kp UP_ARROW  &none   &none      &trans
+&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &none            &trans  &trans  &trans  &none   &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &none
+&none  &none      &none           &none         &none         &none   &none            &trans          &none   &none     &none         &none   &none      &none
+                                  &none         &none         &trans                                   &trans  &none     &none
             >;
 
             label = "nav";
