@@ -98,6 +98,31 @@
             bindings = <&kp GREATER_THAN>;
             key-positions = <9 10>;
         };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <5 7>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <18 22>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <33 36>;
+        };
+
+        asterik {
+            bindings = <&kp ASTERISK>;
+            key-positions = <4 8>;
+        };
+
+        forwardslash {
+            bindings = <&kp SLASH>;
+            key-positions = <17 23>;
+        };
     };
 
     keymap {
@@ -116,10 +141,10 @@
         number_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp LBKT       &kp N7  &kp N8      &kp N9        &kp RBKT                        &trans          &none  &none         &none          &none            &none      &kp BSPC
-&trans  &kp SEMICOLON  &kp N4  &kp N5      &kp NUMBER_6  &kp EQUAL               &trans  &trans  &trans  &none  &kp LEFT_GUI  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RCTRL  &none
-&trans  &kp GRAVE      &kp N1  &kp N2      &kp N3        &kp BACKSLASH  &none            &trans          &none  &none         &none          &none            &none      &none
-                               &kp PERIOD  &kp N0        &kp GRAVE                                       &none  &kp DEL       &trans
+&trans  &none  &kp N7  &kp N8      &kp N9        &none                   &trans          &none  &none         &none          &none            &none      &kp BSPC
+&trans  &none  &kp N4  &kp N5      &kp NUMBER_6  &none           &trans  &trans  &trans  &none  &kp LEFT_GUI  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RCTRL  &none
+&trans  &none  &kp N1  &kp N2      &kp N3        &none  &none            &trans          &none  &none         &none          &none            &none      &none
+                       &kp PERIOD  &kp N0        &none                                   &none  &kp DEL       &trans
             >;
         };
 
