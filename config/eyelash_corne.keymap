@@ -58,6 +58,46 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        left_round_bracket {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <3 4>;
+        };
+
+        right_round_bracket {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 9>;
+        };
+
+        left_square_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <32 31>;
+        };
+
+        right_square_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <37 38>;
+        };
+
+        left_curly_bracket {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <16 17>;
+        };
+
+        right_curly_bracket {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <23 24>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <2 3>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <9 10>;
+        };
     };
 
     keymap {
@@ -73,32 +113,32 @@
             >;
         };
 
-        lower_layer {
+        number_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp LBKT       &kp N7  &kp N8      &kp N9        &kp RBKT                        &trans          &none  &none            &none              &none          &none          &kp BSPC
-&trans  &kp SEMICOLON  &kp N4  &kp N5      &kp NUMBER_6  &kp EQUAL               &trans  &trans  &trans  &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI  &none
-&trans  &kp GRAVE      &kp N1  &kp N2      &kp N3        &kp BACKSLASH  &none            &trans          &none  &none            &none              &none          &none          &none
-                               &kp PERIOD  &kp N0        &kp GRAVE                                       &none  &kp DEL          &trans
+&trans  &kp LBKT       &kp N7  &kp N8      &kp N9        &kp RBKT                        &trans          &none  &none         &none          &none            &none      &kp BSPC
+&trans  &kp SEMICOLON  &kp N4  &kp N5      &kp NUMBER_6  &kp EQUAL               &trans  &trans  &trans  &none  &kp LEFT_GUI  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RCTRL  &none
+&trans  &kp GRAVE      &kp N1  &kp N2      &kp N3        &kp BACKSLASH  &none            &trans          &none  &none         &none          &none            &none      &none
+                               &kp PERIOD  &kp N0        &kp GRAVE                                       &none  &kp DEL       &trans
             >;
         };
 
-        raise_layer {
+        symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &none  &kp AMPERSAND    &kp ASTERISK  &kp PIPE   &kp LEFT_PARENTHESIS                    &trans          &kp RIGHT_PARENTHESIS  &kp GRAVE  &kp TILDE       &kp MINUS  &none  &kp BACKSPACE
-&trans  &none  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp LEFT_BRACKET                &trans  &trans  &trans  &kp RIGHT_BRACKET      &kp MINUS  &kp UNDERSCORE  &none      &none  &none
-&trans  &none  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &kp LEFT_BRACE        &trans            &trans          &kp RIGHT_BRACE        &none      &none           &none      &none  &none
-                                &trans        &trans     &kp SPACE                                               &kp RET                &trans     &trans
+&trans  &none  &kp AMPERSAND    &kp ASTERISK  &kp PIPE   &none                    &trans          &none  &kp PLUS   &kp MINUS  &kp EQUAL  &none  &kp BACKSPACE
+&trans  &none  &kp DOLLAR       &kp PERCENT   &kp CARET  &none            &trans  &trans  &trans  &none  &kp GRAVE  &none      &none      &none  &none
+&trans  &none  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &none  &trans            &trans          &none  &none      &none      &none      &none  &none
+                                &trans        &trans     &none                                    &none  &trans     &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&none  &none         &none         &none             &none           &none                   &trans          &none  &none             &kp UP_ARROW  &none   &none      &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none           &trans  &trans  &trans  &none  &kp LEFT          &kp DOWN      &kp UP  &kp RIGHT  &none
-&none  &none         &none         &none             &none           &none  &none            &trans          &none  &none             &none         &none   &none      &none
-                                   &none             &none           &none                                   &none  &kp LEFT_COMMAND  &none
+&none  &none      &none           &none         &none         &none                   &trans          &none  &none     &kp UP_ARROW  &none   &none      &none
+&none  &kp LCTRL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &none           &trans  &trans  &trans  &none  &kp LEFT  &kp DOWN      &kp UP  &kp RIGHT  &none
+&none  &none      &none           &none         &none         &none  &none            &trans          &none  &none     &none         &none   &none      &none
+                                  &none         &none         &none                                   &none  &none     &none
             >;
 
             label = "nav";
@@ -106,10 +146,10 @@
 
         fn_layer {
             bindings = <
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp F7  &kp F8  &kp F9  &kp F12                    &tog 5          &bt BT_PRV    &bt BT_NXT    &trans            &trans        &trans        &bt BT_CLR
-&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5  &kp F6  &kp F11            &trans  &trans  &trans  &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &kp C_VOLUME_UP
-&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2  &kp F3  &kp F10  &trans            &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &kp C_VOLUME_DOWN
-                                          &trans  &trans  &trans                                     &trans        &trans        &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp F7  &kp F8  &kp F9  &kp F12                  &tog 5         &bt BT_PRV    &bt BT_NXT    &none             &none         &none         &bt BT_CLR
+&rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp F4  &kp F5  &kp F6  &kp F11           &none  &none   &none  &none         &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp C_VOLUME_UP
+&rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp F1  &kp F2  &kp F3  &kp F10  &none           &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &kp C_VOLUME_DOWN
+                                          &none   &none   &none                                   &none         &none         &none
             >;
 
             label = "fn";
@@ -117,10 +157,10 @@
 
         gameL1 {
             bindings = <
-&kp ESCAPE     &none             &kp Q  &kp W         &kp E   &kp R                      &none         &none  &none  &none  &none  &none  &none
-&kp TAB        &kp LEFT_SHIFT    &kp A  &kp S         &kp D   &kp F               &none  &none  &none  &none  &none  &none  &none  &none  &none
-&kp RIGHT_ALT  &kp LEFT_CONTROL  &none  &none         &none   &none      &none           &none         &none  &none  &none  &none  &none  &none
-                                        &kp LEFT_ALT  &tog 6  &kp SPACE                                &none  &none  &none
+&kp ESCAPE     &none             &kp Q  &kp W         &kp E  &kp R                      &none          &none  &none  &none  &none  &none  &none
+&kp TAB        &kp LEFT_SHIFT    &kp A  &kp S         &kp D  &kp F               &none  &none   &none  &none  &none  &none  &none  &none  &none
+&kp RIGHT_ALT  &kp LEFT_CONTROL  &none  &none         &none  &none      &none           &tog 0         &none  &none  &none  &none  &none  &none
+                                        &kp LEFT_ALT  &mo 6  &kp SPACE                                 &none  &none  &none
             >;
 
             label = "game-1";
