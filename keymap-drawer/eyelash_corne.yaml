@@ -46,8 +46,8 @@ layers:
   - LGUI
   - nav
   - {t: '$$mdi:keyboard-space$$', h: fn}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - {t: '`', h: SYMBOL, s: '~'}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -95,8 +95,8 @@ layers:
   - .
   - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:backspace-reverse-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -106,7 +106,7 @@ layers:
   - '|'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - +
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -122,7 +122,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -144,8 +144,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -366,9 +366,11 @@ combos:
   k: +
 - p: [18, 22]
   k: {t: '-', s: _}
-- p: [33, 36]
+- p: [16, 24]
   k: {t: '=', s: +}
 - p: [4, 8]
   k: '*'
 - p: [17, 23]
   k: {t: /, s: '?'}
+- p: [15, 25]
+  k: _
