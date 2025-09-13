@@ -29,11 +29,13 @@
 
 / {
     behaviors {
-        td0: td0 {
+        td-mac-copy-paste {
+            :td-copy-paste
+
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&macro_command_c>, <&macro_command_v>;
         };
     };
 
@@ -144,14 +146,10 @@
             key-positions = <39 38>;
         };
 
-        copy-ctrl+c {
-            bindings = <&kp C_AC_COPY>;
+        copy-paste {
+            bindings = <&td-mac-copy-paste>;
             key-positions = <30 31>;
-        };
-
-        paste-ctrl+v {
-            bindings = <&kp C_AC_PASTE>;
-            key-positions = <30 32>;
+            layers = <7>;
         };
 
         undo {
@@ -162,6 +160,36 @@
         redo {
             bindings = <&kp C_AC_REDO>;
             key-positions = <29 30 31>;
+        };
+    };
+
+    macros {
+        macro_command_c: macro_ctrl_key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp C>;
+            label = "MACRO_CTRL_KEY";
+        };
+
+        macro_ctrl_c: macro_ctrl_key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp C>;
+            label = "MACRO_CTRL_KEY";
+        };
+
+        macro_command_v: macro_command_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp V>;
+            label = "MACRO_COMMAND_V";
+        };
+
+        macro_ctrl_v: macro_ctrl_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp V>;
+            label = "MACRO_CTRL_V";
         };
     };
 
