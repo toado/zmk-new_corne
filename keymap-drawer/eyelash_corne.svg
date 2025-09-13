@@ -638,10 +638,10 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">UNDO</text>
 </g>
 <g class="combo combopos-21">
-<path d="M168,154 l-65,5" class="combo"/>
-<path d="M168,154 l65,-5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="141" width="28" height="26" class="combo"/>
-<text x="168" y="154" class="combo tap">REDO</text>
+<path d="M140,149 l-38,8" class="combo"/>
+<path d="M140,149 l38,-6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
+<text x="140" y="149" class="combo tap">REDO</text>
 </g>
 </g>
 </g>
@@ -1007,10 +1007,10 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">UNDO</text>
 </g>
 <g class="combo combopos-21">
-<path d="M168,154 l-65,5" class="combo"/>
-<path d="M168,154 l65,-5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="141" width="28" height="26" class="combo"/>
-<text x="168" y="154" class="combo tap">REDO</text>
+<path d="M140,149 l-38,8" class="combo"/>
+<path d="M140,149 l38,-6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
+<text x="140" y="149" class="combo tap">REDO</text>
 </g>
 </g>
 </g>
@@ -1367,10 +1367,10 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">UNDO</text>
 </g>
 <g class="combo combopos-21">
-<path d="M168,154 l-65,5" class="combo"/>
-<path d="M168,154 l65,-5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="141" width="28" height="26" class="combo"/>
-<text x="168" y="154" class="combo tap">REDO</text>
+<path d="M140,149 l-38,8" class="combo"/>
+<path d="M140,149 l38,-6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
+<text x="140" y="149" class="combo tap">REDO</text>
 </g>
 </g>
 </g>
@@ -1725,10 +1725,10 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">UNDO</text>
 </g>
 <g class="combo combopos-21">
-<path d="M168,154 l-65,5" class="combo"/>
-<path d="M168,154 l65,-5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="141" width="28" height="26" class="combo"/>
-<text x="168" y="154" class="combo tap">REDO</text>
+<path d="M140,149 l-38,8" class="combo"/>
+<path d="M140,149 l38,-6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
+<text x="140" y="149" class="combo tap">REDO</text>
 </g>
 </g>
 </g>
@@ -2107,10 +2107,10 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">UNDO</text>
 </g>
 <g class="combo combopos-21">
-<path d="M168,154 l-65,5" class="combo"/>
-<path d="M168,154 l65,-5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="141" width="28" height="26" class="combo"/>
-<text x="168" y="154" class="combo tap">REDO</text>
+<path d="M140,149 l-38,8" class="combo"/>
+<path d="M140,149 l38,-6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
+<text x="140" y="149" class="combo tap">REDO</text>
 </g>
 </g>
 </g>
@@ -2469,10 +2469,10 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">UNDO</text>
 </g>
 <g class="combo combopos-21">
-<path d="M168,154 l-65,5" class="combo"/>
-<path d="M168,154 l65,-5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="141" width="28" height="26" class="combo"/>
-<text x="168" y="154" class="combo tap">REDO</text>
+<path d="M140,149 l-38,8" class="combo"/>
+<path d="M140,149 l38,-6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
+<text x="140" y="149" class="combo tap">REDO</text>
 </g>
 </g>
 </g>
@@ -2828,10 +2828,10 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">UNDO</text>
 </g>
 <g class="combo combopos-21">
-<path d="M168,154 l-65,5" class="combo"/>
-<path d="M168,154 l65,-5" class="combo"/>
-<rect rx="6" ry="6" x="154" y="141" width="28" height="26" class="combo"/>
-<text x="168" y="154" class="combo tap">REDO</text>
+<path d="M140,149 l-38,8" class="combo"/>
+<path d="M140,149 l38,-6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
+<text x="140" y="149" class="combo tap">REDO</text>
 </g>
 </g>
 </g>

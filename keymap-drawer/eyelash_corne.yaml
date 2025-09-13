@@ -386,5 +386,5 @@ combos:
   k: PASTE
 - p: [29, 30]
   k: UNDO
-- p: [29, 32]
+- p: [29, 30, 31]
   k: REDO
