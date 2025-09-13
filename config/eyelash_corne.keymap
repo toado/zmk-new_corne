@@ -161,7 +161,7 @@
 
         redo {
             bindings = <&kp K_REDO>;
-            key-positions = <29 32>;
+            key-positions = <29 30 31>;
         };
     };
 
