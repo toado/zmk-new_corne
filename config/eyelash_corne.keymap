@@ -29,6 +29,8 @@
 
 / {
     behaviors {
+        td-mac-copy-paste:
+
         td-mac-copy-paste {
             :td-copy-paste
 
