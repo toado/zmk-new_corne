@@ -33,6 +33,8 @@
 
         td-mac-copy-paste:
 
+        td-mac-copy-paste:
+
         td-mac-copy-paste {
             :td-copy-paste
 
@@ -151,7 +153,7 @@
         };
 
         copy-paste {
-            bindings = <&undefined>;
+            bindings = <&td-mac-copy-paste>;
             key-positions = <30 31>;
             layers = <7>;
         };
