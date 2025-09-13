@@ -31,6 +31,8 @@
     behaviors {
         td-mac-copy-paste:
 
+        td-mac-copy-paste:
+
         td-mac-copy-paste {
             :td-copy-paste
 
@@ -190,7 +192,7 @@
         macro_ctrl_v: macro_ctrl_v {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp V>;
+            bindings = <&kp LCTRL &kp V>;
             label = "MACRO_CTRL_V";
         };
     };
