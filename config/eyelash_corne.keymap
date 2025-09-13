@@ -145,22 +145,22 @@
         };
 
         copy-ctrl+c {
-            bindings = <&kp K_COPY>;
+            bindings = <&kp C_AC_COPY>;
             key-positions = <30 31>;
         };
 
         paste-ctrl+v {
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp C_AC_PASTE>;
             key-positions = <30 32>;
         };
 
         undo {
-            bindings = <&kp K_UNDO>;
+            bindings = <&kp C_AC_UNDO>;
             key-positions = <29 30>;
         };
 
         redo {
-            bindings = <&kp K_REDO>;
+            bindings = <&kp C_AC_REDO>;
             key-positions = <29 30 31>;
         };
     };
