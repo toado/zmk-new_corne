@@ -430,9 +430,8 @@ combos:
 - p: [39, 38]
   k: $
 - p: [30, 31]
-  k: AC COPY
-- p: [30, 32]
-  k: AC PASTE
+  k: '&td-mac-copy-paste'
+  l: [winQWERTY]
 - p: [29, 30]
   k: AC UNDO
 - p: [29, 30, 31]
