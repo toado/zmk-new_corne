@@ -160,8 +160,8 @@
 
         mac-copy-paste {
             bindings = <&td_mac_copy_paste>;
-            key-positions = <30 31>;
-            layers = <7>;
+            key-positions = <30 31 44>;
+            layers = <0>;
         };
 
         undo {
