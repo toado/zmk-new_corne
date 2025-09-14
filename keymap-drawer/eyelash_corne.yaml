@@ -46,8 +46,8 @@ layers:
   - LGUI
   - nav
   - {t: '$$mdi:keyboard-space$$', h: fn}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '`', h: NUMBER, s: '~'}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - {t: '`', h: SYMBOL, s: '~'}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -95,8 +95,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -144,8 +144,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -389,8 +389,8 @@ layers:
   - Alt+LGUI
   - nav
   - {t: '$$mdi:keyboard-space$$', h: fn}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '`', h: NUMBER, s: '~'}
+  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - {t: '`', h: SYMBOL, s: '~'}
   - $$mdi:apple-keyboard-option$$
 combos:
 - p: [1, 15, 29]
