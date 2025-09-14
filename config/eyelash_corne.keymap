@@ -35,6 +35,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        td_copy_paste: td_copy_paste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COPY_PASTE";
+            #binding-cells = <0>;
+            bindings = <&kp K_COPY>, <&td_mac_copy_paste>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -159,24 +166,24 @@
         };
 
         mac-copy-paste {
-            bindings = <&td_mac_copy_paste>;
+            bindings = <&td_copy_paste>;
             key-positions = <30 31 44>;
             layers = <0>;
         };
 
         undo {
-            bindings = <&kp C_AC_UNDO>;
+            bindings = <&kp K_UNDO>;
             key-positions = <29 30>;
         };
 
         redo {
-            bindings = <&kp C_AC_REDO>;
+            bindings = <&kp K_REDO>;
             key-positions = <29 30 31>;
         };
 
         win-copy-paste {
             bindings = <&td_win_copy_paste>;
-            key-positions = <30 31>;
+            key-positions = <>;
             layers = <7>;
         };
     };
@@ -295,10 +302,10 @@
         windows_qwerty_layout {
             display-name = "winQWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                             &kp C_VOLUME_UP               &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
-&kp RCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                 &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &none                &kp C_VOL_DN                  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                              &kp LA(LGUI)  &mo 3  &lt 4 SPACE                                                     &lt 3 ENTER  &lt 2 GRAVE  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                        &none         &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
+&kp RCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                 &none  &none  &to 0  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &none           &none         &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                              &kp LA(LGUI)  &mo 3  &lt 4 SPACE                                &lt 1 ENTER  &lt 2 GRAVE  &kp RALT
             >;
         };
     };
