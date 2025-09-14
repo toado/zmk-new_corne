@@ -167,7 +167,7 @@
 
         mac-copy-paste {
             bindings = <&td_copy_paste>;
-            key-positions = <30 31 44>;
+            key-positions = <30 31>;
             layers = <0>;
         };
 
