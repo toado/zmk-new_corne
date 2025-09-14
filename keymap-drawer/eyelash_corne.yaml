@@ -429,9 +429,9 @@ combos:
   k: ':'
 - p: [39, 38]
   k: $
-- p: [30, 31]
+- p: [30, 31, 44]
   k: '&td_mac_copy_paste'
-  l: [winQWERTY]
+  l: [mac]
 - p: [29, 30]
   k: AC UNDO
 - p: [29, 30, 31]
