@@ -430,14 +430,17 @@ combos:
 - p: [39, 38]
   k: $
 - p: [31, 30]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
-  l: [mac]
+  k: '&td_mac_copy_paste'
 - p: [29, 30]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-- p: [29, 30, 31]
+- p: [14, 15]
   k: Gui+Sft+Z
 - p: [29, 30]
   k: Ctl+Z
   l: [winQWERTY]
-- p: [29, 30, 31]
+- p: [29, 30, 14, 15]
   k: Sft+Ctl+Z
+  l: [winQWERTY]
+- p: [31, 30]
+  k: '&td_win_copy_paste'
+  l: [winQWERTY]
