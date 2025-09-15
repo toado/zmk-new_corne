@@ -35,13 +35,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-
-        td_copy_paste: td_copy_paste {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_COPY_PASTE";
-            #binding-cells = <0>;
-            bindings = <&kp K_COPY>, <&kp K_PASTE>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -62,14 +55,14 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TD_MAC_COPY_PASTE";
         #binding-cells = <0>;
-        bindings = <&macro_command_copy>, <&macro_command_v>;
+        bindings = <&kp LG(C)>, <&kp LG(V)>;
     };
 
     td_win_copy_paste: td_win_copy_paste {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_WIN_COPY_PASTE";
         #binding-cells = <0>;
-        bindings = <&macro_ctrl_c>, <&macro_ctrl_v>;
+        bindings = <&kp LC(C)>, <&kp LC(V)>;
     };
 
     combos {
@@ -166,59 +159,30 @@
         };
 
         mac-copy-paste {
-            bindings = <&td_copy_paste>;
+            bindings = <&none>;
             key-positions = <31 30>;
             layers = <0>;
         };
 
-        undo {
-            bindings = <&kp K_UNDO>;
+        mac_undo {
+            bindings = <&kp LG(Z)>;
             key-positions = <29 30>;
         };
 
-        redo {
-            bindings = <&kp K_REDO>;
+        mac_redo {
+            bindings = <&kp LG(LS(Z))>;
             key-positions = <29 30 31>;
         };
 
-        win-copy-paste {
-            bindings = <&td_win_copy_paste>;
-            key-positions = <>;
-            layers = <7>;
-        };
-    };
-
-    macros {
-        macro_command_copy: macro_command_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_COMMAND &kp C>;
-
-            label = "MACRO_CTRL_KEY";
+        win_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <29 30>;
+            layers = <1>;
         };
 
-        macro_ctrl_c: macro_ctrl_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LCTRL &kp C>;
-
-            label = "MACRO_CTRL_KEY";
-        };
-
-        macro_command_v: macro_command_v {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_COMMAND &kp V>;
-
-            label = "MACRO_COMMAND_V";
-        };
-
-        macro_ctrl_v: macro_ctrl_v {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LCTRL &kp V>;
-
-            label = "MACRO_CTRL_V";
+        win_redo {
+            bindings = <&kp LS(LC(Z))>;
+            key-positions = <29 30 31>;
         };
     };
 
@@ -231,7 +195,17 @@
 &kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp C_VOLUME_UP               &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
 &kp RCTRL       &kp A  &kp S  &kp D     &kp F  &kp G                 &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &none                &kp C_VOL_DN                  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                              &kp LGUI  &mo 3  &lt 4 SPACE                                                     &lt 1 ENTER  &lt 2 GRAVE  &kp RALT
+                              &kp LGUI  &mo 4  &lt 5 SPACE                                                     &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
+            >;
+        };
+
+        windows_qwerty_layout {
+            display-name = "winQWERTY";
+            bindings = <
+&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                        &none         &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
+&kp RCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                 &none  &none  &to 0  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &none           &none         &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                              &kp LA(LGUI)  &mo 4  &lt 5 SPACE                                &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
             >;
         };
 
@@ -268,9 +242,9 @@
 
         fn_layer {
             bindings = <
-&rgb_ug RGB_TOG  &kp F12  &kp F7  &kp F8  &kp F9  &none                  &tog 5             &none         &none         &none             &none         &none         &kp C_VOLUME_UP
+&rgb_ug RGB_TOG  &kp F12  &kp F7  &kp F8  &kp F9  &none                  &tog 6             &none         &none         &none             &none         &none         &kp C_VOLUME_UP
 &rgb_ug RGB_EFF  &kp F11  &kp F4  &kp F5  &kp F6  &none           &none  &bt BT_CLR  &to 0  &none         &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp C_VOLUME_DOWN
-&none            &kp F10  &kp F1  &kp F2  &kp F3  &none  &none           &to 7              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &kp C_MUTE
+&none            &kp F10  &kp F1  &kp F2  &kp F3  &none  &none           &to 1              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &kp C_MUTE
                                   &none   &none   &none                                     &none         &none         &none
             >;
 
@@ -281,8 +255,8 @@
             bindings = <
 &kp ESCAPE     &kp Y           &kp Q  &kp W         &kp E  &kp R                      &none         &none  &none  &none  &none  &none  &none
 &kp TAB        &kp LCTRL       &kp A  &kp S         &kp D  &kp F               &none  &none  &to 0  &none  &none  &none  &none  &none  &none
-&kp RIGHT_ALT  &kp LEFT_SHIFT  &none  &none         &none  &kp B      &none           &to 7         &none  &none  &none  &none  &none  &none
-                                      &kp LEFT_ALT  &mo 6  &kp SPACE                                &none  &none  &none
+&kp RIGHT_ALT  &kp LEFT_SHIFT  &none  &none         &none  &kp B      &none           &to 1         &none  &none  &none  &none  &none  &none
+                                      &kp LEFT_ALT  &mo 7  &kp SPACE                                &none  &none  &none
             >;
 
             label = "game-1";
@@ -297,16 +271,6 @@
             >;
 
             label = "game-2";
-        };
-
-        windows_qwerty_layout {
-            display-name = "winQWERTY";
-            bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                        &none         &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
-&kp RCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                 &none  &none  &to 0  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &none           &none         &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                              &kp LA(LGUI)  &mo 3  &lt 4 SPACE                                &lt 1 ENTER  &lt 2 GRAVE  &kp RALT
-            >;
         };
     };
 };
