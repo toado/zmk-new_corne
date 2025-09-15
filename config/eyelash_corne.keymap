@@ -56,6 +56,8 @@
         label = "TD_MAC_COPY_PASTE";
         #binding-cells = <0>;
         bindings = <&kp LG(C)>, <&kp LG(V)>;
+
+        tapping-term-ms = <325>;
     };
 
     td_win_copy_paste: td_win_copy_paste {
@@ -63,6 +65,8 @@
         label = "TD_WIN_COPY_PASTE";
         #binding-cells = <0>;
         bindings = <&kp LC(C)>, <&kp LC(V)>;
+
+        tapping-term-ms = <325>;
     };
 
     combos {
@@ -181,7 +185,7 @@
 
         win_redo {
             bindings = <&kp LS(LC(Z))>;
-            key-positions = <29 30 14 15>;
+            key-positions = <14 15>;
             layers = <1>;
         };
 
