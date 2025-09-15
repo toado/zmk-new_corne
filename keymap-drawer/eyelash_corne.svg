@@ -1014,8 +1014,8 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">Ctl+Z</text>
 </g>
 <g class="combo combopos-22">
-<rect rx="6" ry="6" x="98" y="113" width="28" height="26" class="combo"/>
-<text x="112" y="126" class="combo tap">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<text x="112" y="98" class="combo tap">
 <tspan x="112" dy="-0.6em">Sft+</tspan><tspan x="112" dy="1.2em">Ctl+Z</tspan>
 </text>
 </g>
