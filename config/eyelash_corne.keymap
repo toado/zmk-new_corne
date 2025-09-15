@@ -159,9 +159,8 @@
         };
 
         mac-copy-paste {
-            bindings = <&none>;
+            bindings = <&td_mac_copy_paste>;
             key-positions = <31 30>;
-            layers = <0>;
         };
 
         mac_undo {
@@ -171,7 +170,7 @@
 
         mac_redo {
             bindings = <&kp LG(LS(Z))>;
-            key-positions = <29 30 31>;
+            key-positions = <14 15>;
         };
 
         win_undo {
@@ -182,7 +181,14 @@
 
         win_redo {
             bindings = <&kp LS(LC(Z))>;
-            key-positions = <29 30 31>;
+            key-positions = <29 30 14 15>;
+            layers = <1>;
+        };
+
+        win_copy_paste {
+            bindings = <&td_win_copy_paste>;
+            key-positions = <31 30>;
+            layers = <1>;
         };
     };
 
