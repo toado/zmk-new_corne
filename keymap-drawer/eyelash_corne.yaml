@@ -44,8 +44,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - nav
-  - {t: '$$mdi:keyboard-space$$', h: fn}
+  - fn
+  - {t: '$$mdi:keyboard-space$$', h: nav}
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   - {t: '`', h: SYMBOL, s: '~'}
   - $$mdi:apple-keyboard-option$$
@@ -240,8 +240,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -289,8 +289,8 @@ layers:
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -439,8 +439,13 @@ combos:
   k: Ctl+Z
   l: [winQWERTY]
 - p: [14, 15]
-  k: Sft+Ctl+Z
+  k: Ctl+Sft+Z
   l: [winQWERTY]
 - p: [31, 30]
   k: '&td_win_copy_paste'
+  l: [winQWERTY]
+- p: [13, 1]
+  k: Gui+Sft+4
+- p: [13, 1]
+  k: Sft+Ctl+4
   l: [winQWERTY]
