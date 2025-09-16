@@ -184,7 +184,7 @@
         };
 
         win_redo {
-            bindings = <&kp LS(LC(Z))>;
+            bindings = <&kp LC(LS(Z))>;
             key-positions = <14 15>;
             layers = <1>;
         };
@@ -192,6 +192,17 @@
         win_copy_paste {
             bindings = <&td_win_copy_paste>;
             key-positions = <31 30>;
+            layers = <1>;
+        };
+
+        mac_screenshot {
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            key-positions = <13 1>;
+        };
+
+        win_screenshot {
+            bindings = <&kp LS(LC(NUMBER_4))>;
+            key-positions = <13 1>;
             layers = <1>;
         };
     };
@@ -205,7 +216,7 @@
 &kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp C_VOLUME_UP               &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
 &kp RCTRL       &kp A  &kp S  &kp D     &kp F  &kp G                 &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &none                &kp C_VOL_DN                  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                              &kp LGUI  &mo 4  &lt 5 SPACE                                                     &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
+                              &kp LGUI  &mo 5  &lt 4 SPACE                                                     &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
             >;
         };
 
