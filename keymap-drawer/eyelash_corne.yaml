@@ -431,10 +431,13 @@ combos:
   k: $
 - p: [31, 30]
   k: '&td_mac_copy_paste'
+  l: [mac]
 - p: [29, 30]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  l: [mac]
 - p: [29, 30, 31]
   k: Gui+Sft+Z
+  l: [mac]
 - p: [29, 30]
   k: Ctl+Z
   l: [winQWERTY]
@@ -446,6 +449,7 @@ combos:
   l: [winQWERTY]
 - p: [13, 1]
   k: Gui+Sft+4
+  l: [mac]
 - p: [13, 1]
   k: Sft+Ctl+4
   l: [winQWERTY]

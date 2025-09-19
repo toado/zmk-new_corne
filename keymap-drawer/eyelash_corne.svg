@@ -999,27 +999,10 @@ rect.held, rect.combo.held {
 <text x="868" y="154" class="combo tap">$</text>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_mac_c…</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Z</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-20">
-<path d="M140,149 l-38,8" class="combo"/>
-<path d="M140,149 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
-<text x="140" y="149" class="combo tap">
-<tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
-</text>
-</g>
-<g class="combo combopos-21">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">Ctl+Z</text>
 </g>
-<g class="combo combopos-22">
+<g class="combo combopos-19">
 <path d="M140,149 l-38,8" class="combo"/>
 <path d="M140,149 l38,-6" class="combo"/>
 <rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
@@ -1027,23 +1010,17 @@ rect.held, rect.combo.held {
 <tspan x="140" dy="-0.6em">Ctl+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
 </text>
 </g>
-<g class="combo combopos-23">
+<g class="combo combopos-20">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
 <text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_win_c…</tspan></text>
 </g>
-<g class="combo combopos-24">
-<rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
-<text x="56" y="77" class="combo tap">
-<tspan x="56" dy="-0.6em">Gui+</tspan><tspan x="56" dy="1.2em">Sft+4</tspan>
-</text>
-</g>
-<g class="combo combopos-25">
+<g class="combo combopos-21">
 <rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
 <text x="56" y="77" class="combo tap">
 <tspan x="56" dy="-0.6em">Sft+</tspan><tspan x="56" dy="1.2em">Ctl+4</tspan>
 </text>
 </g>
-<g class="combo combopos-26">
+<g class="combo combopos-22">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
 <text x="868" y="42" class="combo tap">`</text>
 <text x="868" y="31" class="combo shifted">~</text>
@@ -1394,29 +1371,6 @@ rect.held, rect.combo.held {
 <text x="868" y="154" class="combo tap">$</text>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_mac_c…</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Z</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-20">
-<path d="M140,149 l-38,8" class="combo"/>
-<path d="M140,149 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
-<text x="140" y="149" class="combo tap">
-<tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
-</text>
-</g>
-<g class="combo combopos-21">
-<rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
-<text x="56" y="77" class="combo tap">
-<tspan x="56" dy="-0.6em">Gui+</tspan><tspan x="56" dy="1.2em">Sft+4</tspan>
-</text>
-</g>
-<g class="combo combopos-22">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
 <text x="868" y="42" class="combo tap">`</text>
 <text x="868" y="31" class="combo shifted">~</text>
@@ -1759,29 +1713,6 @@ rect.held, rect.combo.held {
 <text x="868" y="154" class="combo tap">$</text>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_mac_c…</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Z</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-20">
-<path d="M140,149 l-38,8" class="combo"/>
-<path d="M140,149 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
-<text x="140" y="149" class="combo tap">
-<tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
-</text>
-</g>
-<g class="combo combopos-21">
-<rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
-<text x="56" y="77" class="combo tap">
-<tspan x="56" dy="-0.6em">Gui+</tspan><tspan x="56" dy="1.2em">Sft+4</tspan>
-</text>
-</g>
-<g class="combo combopos-22">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
 <text x="868" y="42" class="combo tap">`</text>
 <text x="868" y="31" class="combo shifted">~</text>
@@ -2121,29 +2052,6 @@ rect.held, rect.combo.held {
 <text x="868" y="154" class="combo tap">$</text>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_mac_c…</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Z</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-20">
-<path d="M140,149 l-38,8" class="combo"/>
-<path d="M140,149 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
-<text x="140" y="149" class="combo tap">
-<tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
-</text>
-</g>
-<g class="combo combopos-21">
-<rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
-<text x="56" y="77" class="combo tap">
-<tspan x="56" dy="-0.6em">Gui+</tspan><tspan x="56" dy="1.2em">Sft+4</tspan>
-</text>
-</g>
-<g class="combo combopos-22">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
 <text x="868" y="42" class="combo tap">`</text>
 <text x="868" y="31" class="combo shifted">~</text>
@@ -2493,29 +2401,6 @@ rect.held, rect.combo.held {
 <text x="868" y="154" class="combo tap">$</text>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_mac_c…</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Z</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-20">
-<path d="M140,149 l-38,8" class="combo"/>
-<path d="M140,149 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
-<text x="140" y="149" class="combo tap">
-<tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
-</text>
-</g>
-<g class="combo combopos-21">
-<rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
-<text x="56" y="77" class="combo tap">
-<tspan x="56" dy="-0.6em">Gui+</tspan><tspan x="56" dy="1.2em">Sft+4</tspan>
-</text>
-</g>
-<g class="combo combopos-22">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
 <text x="868" y="42" class="combo tap">`</text>
 <text x="868" y="31" class="combo shifted">~</text>
@@ -2861,29 +2746,6 @@ rect.held, rect.combo.held {
 <text x="868" y="154" class="combo tap">$</text>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_mac_c…</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Z</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-20">
-<path d="M140,149 l-38,8" class="combo"/>
-<path d="M140,149 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
-<text x="140" y="149" class="combo tap">
-<tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
-</text>
-</g>
-<g class="combo combopos-21">
-<rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
-<text x="56" y="77" class="combo tap">
-<tspan x="56" dy="-0.6em">Gui+</tspan><tspan x="56" dy="1.2em">Sft+4</tspan>
-</text>
-</g>
-<g class="combo combopos-22">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
 <text x="868" y="42" class="combo tap">`</text>
 <text x="868" y="31" class="combo shifted">~</text>
@@ -3224,29 +3086,6 @@ rect.held, rect.combo.held {
 <text x="868" y="154" class="combo tap">$</text>
 </g>
 <g class="combo combopos-18">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap"><tspan style="font-size: 60%">&amp;td_mac_c…</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Z</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
-</g>
-<g class="combo combopos-20">
-<path d="M140,149 l-38,8" class="combo"/>
-<path d="M140,149 l38,-6" class="combo"/>
-<rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
-<text x="140" y="149" class="combo tap">
-<tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
-</text>
-</g>
-<g class="combo combopos-21">
-<rect rx="6" ry="6" x="42" y="64" width="28" height="26" class="combo"/>
-<text x="56" y="77" class="combo tap">
-<tspan x="56" dy="-0.6em">Gui+</tspan><tspan x="56" dy="1.2em">Sft+4</tspan>
-</text>
-</g>
-<g class="combo combopos-22">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
 <text x="868" y="42" class="combo tap">`</text>
 <text x="868" y="31" class="combo shifted">~</text>
