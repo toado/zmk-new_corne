@@ -165,16 +165,19 @@
         mac-copy-paste {
             bindings = <&td_mac_copy_paste>;
             key-positions = <31 30>;
+            layers = <0>;
         };
 
         mac_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <29 30>;
+            layers = <0>;
         };
 
         mac_redo {
             bindings = <&kp LG(LS(Z))>;
             key-positions = <29 30 31>;
+            layers = <0>;
         };
 
         win_undo {
@@ -198,6 +201,7 @@
         mac_screenshot {
             bindings = <&kp LG(LS(NUMBER_4))>;
             key-positions = <13 1>;
+            layers = <0>;
         };
 
         win_screenshot {
