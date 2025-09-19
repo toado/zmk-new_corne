@@ -109,12 +109,12 @@
 
         less_than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <31 30 32>;
+            key-positions = <5 4>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <37 38 39>;
+            key-positions = <7 8>;
         };
 
         plus {
@@ -154,12 +154,12 @@
 
         vim-colon {
             bindings = <&kp COLON>;
-            key-positions = <25 24>;
+            key-positions = <25 26>;
         };
 
         vim-dollar-leading-key {
             bindings = <&kp DOLLAR>;
-            key-positions = <39 38>;
+            key-positions = <39 40>;
         };
 
         mac-copy-paste {
@@ -174,7 +174,7 @@
 
         mac_redo {
             bindings = <&kp LG(LS(Z))>;
-            key-positions = <14 15>;
+            key-positions = <29 30 31>;
         };
 
         win_undo {
@@ -185,7 +185,7 @@
 
         win_redo {
             bindings = <&kp LC(LS(Z))>;
-            key-positions = <14 15>;
+            key-positions = <30 29 31>;
             layers = <1>;
         };
 
@@ -205,6 +205,20 @@
             key-positions = <13 1>;
             layers = <1>;
         };
+
+        tilde-grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 11>;
+        };
+    };
+
+    macros {
+        macro_win_to_profile: macro_win_to_profile {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 1>;
+            label = "MACRO_WIN_TO_PROFILE";
+        };
     };
 
     keymap {
@@ -223,10 +237,10 @@
         windows_qwerty_layout {
             display-name = "winQWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R  &kp T                        &none         &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
-&kp RCTRL       &kp A  &kp S  &kp D         &kp F  &kp G                 &none  &none  &to 0  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B        &none           &none         &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                              &kp LA(LGUI)  &mo 4  &lt 5 SPACE                                &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp E                  &kp R  &kp T                        &none         &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
+&kp RCTRL       &kp A  &kp S  &kp D                  &kp F  &kp G                 &none  &none  &to 0  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                  &kp V  &kp B        &none           &none         &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                              &mt LEFT_ALT LEFT_GUI  &mo 4  &lt 5 SPACE                                &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
             >;
         };
 
@@ -243,10 +257,10 @@
         symbol_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &none  &kp AMPERSAND    &kp ASTERISK  &kp PIPE   &none                     &trans          &none   &kp PLUS      &kp MINUS      &kp EQUAL  &none            &trans
-&trans  &none  &kp DOLLAR       &kp PERCENT   &kp CARET  &none             &trans  &trans  &trans  &none   &kp LEFT_GUI  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_SHIFT  &none
-&trans  &none  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &none   &trans            &trans          &none   &none         &none          &none      &none            &none
-                                &trans        &trans     &trans                                    &trans  &trans        &trans
+&trans  &none      &kp AMPERSAND    &kp ASTERISK  &kp PIPE   &none                     &trans          &none   &kp PLUS      &kp MINUS      &kp EQUAL  &none            &trans
+&trans  &kp SLASH  &kp DOLLAR       &kp PERCENT   &kp CARET  &none             &trans  &trans  &trans  &none   &kp LEFT_GUI  &kp RIGHT_ALT  &kp RCTRL  &kp RIGHT_SHIFT  &none
+&trans  &none      &kp EXCLAMATION  &kp AT_SIGN   &kp HASH   &none   &trans            &trans          &none   &none         &none          &none      &none            &none
+                                    &trans        &trans     &trans                                    &trans  &trans        &trans
             >;
         };
 
@@ -263,10 +277,10 @@
 
         fn_layer {
             bindings = <
-&rgb_ug RGB_TOG  &kp F12  &kp F7  &kp F8  &kp F9  &none                  &tog 6             &none         &none         &none             &none         &none         &kp C_VOLUME_UP
-&rgb_ug RGB_EFF  &kp F11  &kp F4  &kp F5  &kp F6  &none           &none  &bt BT_CLR  &to 0  &none         &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp C_VOLUME_DOWN
-&none            &kp F10  &kp F1  &kp F2  &kp F3  &none  &none           &to 1              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &kp C_MUTE
-                                  &none   &none   &none                                     &none         &none         &none
+&rgb_ug RGB_TOG  &kp F12  &kp F7  &kp F8  &kp F9  &none                  &tog 6             &none                  &none         &none             &none         &none         &kp C_VOLUME_UP
+&rgb_ug RGB_EFF  &kp F11  &kp F4  &kp F5  &kp F6  &none           &none  &bt BT_CLR  &to 0  &none                  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &none         &kp C_VOLUME_DOWN
+&none            &kp F10  &kp F1  &kp F2  &kp F3  &none  &none           &to 1              &macro_win_to_profile  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &kp C_MUTE
+                                  &none   &none   &none                                     &none                  &none         &none
             >;
 
             label = "fn";
@@ -285,10 +299,10 @@
 
         gameL2 {
             bindings = <
-&none  &kp NUMBER_1  &kp NUMBER_2  &trans  &kp NUMBER_3  &kp NUMBER_4                  &none         &none  &none  &none  &none  &none  &none
-&none  &none         &trans        &trans  &trans        &kp NUMBER_5           &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none   &none         &none         &none           &none         &none  &none  &none  &none  &none  &none
-                                   &none   &none         &none                                       &none  &none  &none
+&none  &none  &kp NUMBER_1  &trans  &kp NUMBER_2  &kp NUMBER_3                  &none         &none  &none  &none  &none  &none  &none
+&none  &none  &trans        &trans  &trans        &kp NUMBER_4           &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none         &none   &none         &kp NUMBER_5  &none           &none         &none  &none  &none  &none  &none  &none
+                            &none   &none         &none                                       &none  &none  &none
             >;
 
             label = "game-2";
