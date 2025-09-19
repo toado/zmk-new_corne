@@ -92,7 +92,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - Alt+LGUI
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:apple-keyboard-option$$'}
   - nav
   - {t: '$$mdi:keyboard-space$$', h: fn}
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
@@ -162,7 +162,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: '?'}
   - $
   - '%'
   - ^
@@ -282,7 +282,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: winQWERTY, h: toggle}
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - '&macro_win_to_profile'
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
@@ -345,10 +345,23 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   game-2:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
-  - '2'
   - {t: '$$mdi:transfer$$', type: trans}
+  - '2'
   - '3'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -359,25 +372,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '5'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -407,9 +407,9 @@ combos:
   k: '{'
 - p: [23, 24]
   k: '}'
-- p: [31, 30, 32]
+- p: [5, 4]
   k: <
-- p: [37, 38, 39]
+- p: [7, 8]
   k: '>'
 - p: [4, 8]
   k: +
@@ -425,20 +425,20 @@ combos:
   k: _
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
-- p: [25, 24]
+- p: [25, 26]
   k: ':'
-- p: [39, 38]
+- p: [39, 40]
   k: $
 - p: [31, 30]
   k: '&td_mac_copy_paste'
 - p: [29, 30]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-- p: [14, 15]
+- p: [29, 30, 31]
   k: Gui+Sft+Z
 - p: [29, 30]
   k: Ctl+Z
   l: [winQWERTY]
-- p: [14, 15]
+- p: [30, 29, 31]
   k: Ctl+Sft+Z
   l: [winQWERTY]
 - p: [31, 30]
@@ -449,3 +449,5 @@ combos:
 - p: [13, 1]
   k: Sft+Ctl+4
   l: [winQWERTY]
+- p: [10, 11]
+  k: {t: '`', s: '~'}
