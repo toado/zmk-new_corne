@@ -35,6 +35,98 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        kp_sqt_undr: kp_sqt_undr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_SQT_UNDR";
+            bindings = <&kp SQT>, <&kp UNDER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        kp_dot_colon: kp_dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_DOT_COLON";
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        kp_min_qt: kp_min_qt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_MIN_QT";
+            bindings = <&kp MINUS>, <&kp DQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        kp_cmma_smicln: kp_cmma_smicln {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_CMMA_SMICLN";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "home_row_mod_left";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <15 17>;
+        };
+
+        hm_shift_l: hm_shift_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_SHIFT_L";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <15 17>;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <17 8>;
+        };
+
+        hm_shift_r: hm_shift_r {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_SHIFT_R";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <17 8>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -183,19 +275,19 @@
         win_undo {
             bindings = <&kp LC(Z)>;
             key-positions = <29 30>;
-            layers = <1>;
+            layers = <2>;
         };
 
         win_redo {
             bindings = <&kp LC(LS(Z))>;
             key-positions = <30 29 31>;
-            layers = <1>;
+            layers = <2>;
         };
 
         win_copy_paste {
             bindings = <&td_win_copy_paste>;
             key-positions = <31 30>;
-            layers = <1>;
+            layers = <2>;
         };
 
         mac_screenshot {
@@ -207,7 +299,7 @@
         win_screenshot {
             bindings = <&kp LS(LC(NUMBER_4))>;
             key-positions = <13 1>;
-            layers = <1>;
+            layers = <2>;
         };
 
         tilde-grave {
@@ -220,7 +312,7 @@
         bt_windows: macro_win_to_profile {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 1>;
+            bindings = <&bt BT_SEL 0 &to 2>;
             label = "MACRO_WIN_TO_PROFILE";
         };
 
@@ -250,12 +342,22 @@
         compatible = "zmk,keymap";
 
         mac_qwerty_layer {
-            display-name = "mac";
+            display-name = "macQWERTY";
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp C_VOLUME_UP               &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
 &kp RCTRL       &kp A  &kp S  &kp D     &kp F  &kp G                 &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &none                &kp C_VOL_DN                  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                              &kp LGUI  &mo 5  &lt 4 SPACE                                                     &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
+                              &kp LGUI  &mo 6  &lt 5 SPACE                                                     &lt 3 ENTER  &lt 4 GRAVE  &kp RALT
+            >;
+        };
+
+        graphite {
+            display-name = "macGraphite";
+            bindings = <
+&kp TAB         &kp B                     &kp L         &kp D            &kp W                &kp Z                             &kp C_VOLUME_UP               &kp MINUS    &kp F             &kp O             &kp U         &kp J                      &kp BACKSPACE
+&kp RCTRL       &hm_shift_l LEFT_SHIFT N  &hml LCTRL R  &hml LEFT_ALT T  &hml LEFT_COMMAND S  &kp G                 &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp Y        &hmr RIGHT_GUI H  &hmr RIGHT_ALT A  &hmr RCTRL E  &hm_shift_r RIGHT_SHIFT I  &kp SQT
+&kp LEFT_SHIFT  &kp Q                     &kp X         &kp M            &kp C                &kp V        &none                &kp C_VOL_DN                  &kp K        &kp P             &kp COMMA         &kp DOT       &kp FSLH                   &kp ESC
+                                                        &kp LGUI         &mo 6                &lt 5 SPACE                                                     &lt 3 ENTER  &lt 4 GRAVE       &kp RALT
             >;
         };
 
@@ -265,7 +367,7 @@
 &kp TAB         &kp Q  &kp W  &kp E                  &kp R  &kp T                        &none         &kp Y        &kp U        &kp I      &kp O    &kp P          &kp BACKSPACE
 &kp RCTRL       &kp A  &kp S  &kp D                  &kp F  &kp G                 &none  &none  &to 0  &kp H        &kp J        &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C                  &kp V  &kp B        &none           &none         &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                              &mt LEFT_ALT LEFT_GUI  &mo 5  &lt 4 SPACE                                &lt 2 ENTER  &lt 3 GRAVE  &kp RALT
+                              &mt LEFT_ALT LEFT_GUI  &mo 6  &lt 5 SPACE                                &lt 3 ENTER  &lt 4 GRAVE  &kp RALT
             >;
         };
 
@@ -302,7 +404,7 @@
 
         fn_layer {
             bindings = <
-&rgb_ug RGB_TOG  &kp F12  &kp F7  &kp F8  &kp F9  &none                  &tog 6             &none        &none         &none             &none       &none         &kp C_VOLUME_UP
+&rgb_ug RGB_TOG  &kp F12  &kp F7  &kp F8  &kp F9  &none                  &tog 7             &none        &none         &none             &none       &none         &kp C_VOLUME_UP
 &rgb_ug RGB_EFF  &kp F11  &kp F4  &kp F5  &kp F6  &none           &none  &bt BT_CLR  &none  &none        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT  &none         &kp C_VOLUME_DOWN
 &none            &kp F10  &kp F1  &kp F2  &kp F3  &none  &none           &none              &bt_windows  &bt_mac_mini  &bt_work          &bt_mpb     &bt BT_SEL 4  &kp C_MUTE
                                   &none   &none   &none                                     &none        &none         &none
@@ -315,8 +417,8 @@
             bindings = <
 &kp ESCAPE     &kp Y           &kp Q  &kp W         &kp E  &kp R                      &none         &none  &none  &none  &none  &none  &none
 &kp TAB        &kp LCTRL       &kp A  &kp S         &kp D  &kp F               &none  &none  &to 0  &none  &none  &none  &none  &none  &none
-&kp RIGHT_ALT  &kp LEFT_SHIFT  &none  &none         &none  &kp B      &none           &to 1         &none  &none  &none  &none  &none  &none
-                                      &kp LEFT_ALT  &mo 7  &kp SPACE                                &none  &none  &none
+&kp RIGHT_ALT  &kp LEFT_SHIFT  &none  &none         &none  &kp B      &none           &to 2         &none  &none  &none  &none  &none  &none
+                                      &kp LEFT_ALT  &mo 8  &kp SPACE                                &none  &none  &none
             >;
 
             label = "game-1";
