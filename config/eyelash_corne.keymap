@@ -63,10 +63,10 @@
             mods = <(MOD_LSFT)>;
         };
 
-        kp_slash_lessarrow: kp_slash_lessarrow {
+        kp_slash_greaterthan: kp_slash_greaterthan {
             compatible = "zmk,behavior-mod-morph";
-            label = "KP_SLASH_LESSARROW";
-            bindings = <&kp SLASH>, <&kp LESS_THAN>;
+            label = "KP_SLASH_GREATERTHAN";
+            bindings = <&kp SLASH>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -126,6 +126,15 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <17 8>;
+        };
+
+        kp_period_lessthan: kp_period_lessthan {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KP_PERIOD_LESSTHAN";
+            bindings = <&kp KP_DOT>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -199,16 +208,6 @@
             key-positions = <37 38>;
         };
 
-        less_than {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <>;
-        };
-
-        greater_than {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <>;
-        };
-
         plus {
             bindings = <&kp PLUS>;
             key-positions = <4 8>;
@@ -232,11 +231,6 @@
         forwardslash {
             bindings = <&kp SLASH>;
             key-positions = <16 24>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <>;
         };
 
         escape {
@@ -354,9 +348,9 @@
         graphite {
             display-name = "macGraphite";
             bindings = <
-&kp TAB         &kp B                     &kp L         &kp D            &kp W                &kp Z                        &none         &kp_sqt_undr  &kp F             &kp O             &kp U         &kp J                      &kp BACKSPACE
-&kp RCTRL       &hm_shift_l LEFT_SHIFT N  &hml LCTRL R  &hml LEFT_ALT T  &hml LEFT_COMMAND S  &kp G                 &none  &none  &none  &kp Y         &hmr RIGHT_GUI H  &hmr RIGHT_ALT A  &hmr RCTRL E  &hm_shift_r RIGHT_SHIFT I  &kp_cmma_qstn
-&kp LEFT_SHIFT  &kp Q                     &kp X         &kp M            &kp C                &kp V        &none           &to 1         &kp K         &kp P             &kp PERIOD        &kp_min_qt    &kp_slash_lessarrow        &kp ESC
+&kp TAB         &kp B                     &kp L         &kp D            &kp W                &kp Z                        &none         &kp_sqt_undr  &kp F             &kp O                &kp U         &kp J                      &kp BACKSPACE
+&kp RCTRL       &hm_shift_l LEFT_SHIFT N  &hml LCTRL R  &hml LEFT_ALT T  &hml LEFT_COMMAND S  &kp G                 &none  &none  &none  &kp Y         &hmr RIGHT_GUI H  &hmr RIGHT_ALT A     &hmr RCTRL E  &hm_shift_r RIGHT_SHIFT I  &kp_cmma_qstn
+&kp LEFT_SHIFT  &kp Q                     &kp X         &kp M            &kp C                &kp V        &none           &to 1         &kp K         &kp P             &kp_period_lessthan  &kp_min_qt    &kp_slash_greaterthan      &kp ESC
                                                         &kp LGUI         &mo 6                &lt 5 SPACE                                &lt 3 ENTER   &lt 4 GRAVE       &kp RALT
             >;
         };
