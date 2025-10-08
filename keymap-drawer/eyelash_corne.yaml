@@ -1,5 +1,54 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
+  macGraphite:
+  - $$mdi:keyboard-tab$$
+  - B
+  - L
+  - D
+  - W
+  - Z
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '''', s: _}
+  - F
+  - O
+  - U
+  - J
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-control$$
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - G
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Y
+  - {t: H, h: RIGHT GUI}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ',', s: '?'}
+  - $$mdi:apple-keyboard-shift$$
+  - Q
+  - X
+  - M
+  - C
+  - V
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: macQWERTY, h: toggle}
+  - K
+  - P
+  - {t: KP DOT, s: <}
+  - {t: '-', s: '"'}
+  - {t: /, s: '>'}
+  - $$mdi:keyboard-esc$$
+  - LGUI
+  - fn
+  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - {t: '`', h: SYMBOL, s: '~'}
+  - $$mdi:apple-keyboard-option$$
   macQWERTY:
   - $$mdi:keyboard-tab$$
   - Q
@@ -49,55 +98,6 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   - {t: '`', h: SYMBOL, s: '~'}
   - $$mdi:apple-keyboard-option$$
-  macGraphite:
-  - $$mdi:keyboard-tab$$
-  - B
-  - L
-  - D
-  - W
-  - Z
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '''', s: _}
-  - F
-  - O
-  - U
-  - J
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-control$$
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - G
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Y
-  - {t: H, h: RIGHT GUI}
-  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: ',', s: '?'}
-  - $$mdi:apple-keyboard-shift$$
-  - Q
-  - X
-  - M
-  - C
-  - V
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: macQWERTY, h: toggle}
-  - K
-  - P
-  - .
-  - {t: '-', s: '"'}
-  - {t: /, s: <}
-  - $$mdi:keyboard-esc$$
-  - LGUI
-  - fn
-  - {t: '$$mdi:keyboard-space$$', h: nav}
-  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
-  - {t: '`', h: SYMBOL, s: '~'}
-  - $$mdi:apple-keyboard-option$$
   winQWERTY:
   - $$mdi:keyboard-tab$$
   - Q
@@ -134,7 +134,7 @@ layers:
   - V
   - B
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: macGraphite, h: toggle}
   - N
   - M
   - {t: ',', s: <}
@@ -198,39 +198,39 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '*'
   - '&'
   - '*'
   - '|'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - +
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - ':'
   - {t: ;, s: ':'}
+  - {t: '`', s: '~'}
+  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - $
   - '%'
   - ^
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - '@'
   - '#'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -448,18 +448,14 @@ combos:
   k: (
 - p: [8, 9]
   k: )
-- p: [32, 31]
-  k: {t: '[', s: '{'}
-- p: [37, 38]
-  k: {t: ']', s: '}'}
 - p: [16, 17]
-  k: '{'
+  k: {t: '[', s: '{'}
 - p: [23, 24]
+  k: {t: ']', s: '}'}
+- p: [31, 32]
+  k: '{'
+- p: [37, 38]
   k: '}'
-- p: [5, 4]
-  k: <
-- p: [7, 8]
-  k: '>'
 - p: [4, 8]
   k: +
 - p: [17, 23]
@@ -470,23 +466,21 @@ combos:
   k: '*'
 - p: [16, 24]
   k: {t: /, s: '?'}
-- p: [15, 25]
-  k: _
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
-- p: [25, 26]
+- p: [25, 24]
   k: ':'
-- p: [39, 40]
+- p: [39, 38]
   k: $
 - p: [31, 30]
   k: '&td_mac_copy_paste'
-  l: [macQWERTY]
+  l: [macQWERTY, macGraphite]
 - p: [29, 30]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  l: [macQWERTY]
+  l: [macQWERTY, macGraphite]
 - p: [29, 30, 31]
   k: Gui+Sft+Z
-  l: [macQWERTY]
+  l: [macQWERTY, macGraphite]
 - p: [29, 30]
   k: Ctl+Z
   l: [winQWERTY]
@@ -496,11 +490,15 @@ combos:
 - p: [31, 30]
   k: '&td_win_copy_paste'
   l: [winQWERTY]
-- p: [13, 1]
+- p: [2, 14]
   k: Gui+Sft+4
-  l: [macQWERTY]
+  l: [macQWERTY, macGraphite]
 - p: [13, 1]
   k: Sft+Ctl+4
   l: [winQWERTY]
 - p: [10, 11]
   k: {t: '`', s: '~'}
+- p: [10, 9]
+  k: {t: ;, s: ':'}
+- p: [29, 40]
+  k: $$mdi:apple-keyboard-caps$$
