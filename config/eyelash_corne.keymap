@@ -262,7 +262,7 @@
 
         mac_redo {
             bindings = <&kp LG(LS(Z))>;
-            key-positions = <29 30 31>;
+            key-positions = <31 30 29>;
             layers = <1 0>;
         };
 
