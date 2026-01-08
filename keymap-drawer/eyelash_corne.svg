@@ -628,8 +628,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
 </g>
 <g class="combo combopos-17">
-<path d="M140,149 l-38,8" class="combo"/>
 <path d="M140,149 l38,-6" class="combo"/>
+<path d="M140,149 l-38,8" class="combo"/>
 <rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
 <text x="140" y="149" class="combo tap">
 <tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>
@@ -1003,8 +1003,8 @@ rect.held, rect.combo.held {
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="104" y="150" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
 </g>
 <g class="combo combopos-17">
-<path d="M140,149 l-38,8" class="combo"/>
 <path d="M140,149 l38,-6" class="combo"/>
+<path d="M140,149 l-38,8" class="combo"/>
 <rect rx="6" ry="6" x="126" y="136" width="28" height="26" class="combo"/>
 <text x="140" y="149" class="combo tap">
 <tspan x="140" dy="-0.6em">Gui+</tspan><tspan x="140" dy="1.2em">Sft+Z</tspan>

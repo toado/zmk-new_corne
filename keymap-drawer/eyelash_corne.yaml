@@ -478,7 +478,7 @@ combos:
 - p: [29, 30]
   k: {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   l: [macQWERTY, macGraphite]
-- p: [29, 30, 31]
+- p: [31, 30, 29]
   k: Gui+Sft+Z
   l: [macQWERTY, macGraphite]
 - p: [29, 30]
